@@ -1,0 +1,17 @@
+.form-group {
+    margin-top: 40px;
+}
+
+h2 {
+    margin-top: 80px;
+}
+
+.alert-danger {
+    margin-top: 100px;
+    color: #333;
+}
+
+flash-messages {
+    position: absolute;
+    bottom: 10px;
+}

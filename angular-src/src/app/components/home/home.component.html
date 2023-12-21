@@ -1,0 +1,27 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="todo-container">
+    <h1 class="display-4">Todo App</h1>
+    <div *ngIf="authService.loggedIn()">
+      <h2>Welcome {{authService.getUsername()}}!</h2>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="authService.loggedIn()" class="welcome-message">
+  <p>Go to your to-do list</p>
+  <a href="/dashboard">
+    <button class="go-to-dashboard-button">Go to Dashboard</button>
+  </a>
+</div>
+
+<div *ngIf="!authService.loggedIn()" class="welcome-message">
+  <p>Please login or register to use the Todo App</p>
+  <div class="btn-container">
+    <a href="/login">
+      <button class="btn login-btn">Login</button>
+    </a>
+    <a href="/register">
+      <button class="btn register-btn">Register</button>
+    </a>
+  </div>
+</div>

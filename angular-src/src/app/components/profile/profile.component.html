@@ -1,0 +1,22 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="todo-container">
+    <h1 class="display-4">Todo App</h1>
+    <div *ngIf="authService.loggedIn()">
+      <h2>Welcome {{authService.getUsername()}}!</h2>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="column"></div>
+  <div class="column center-column">
+    <div class="user-info" *ngIf="user">
+      <h2 class="page-header">{{user.name}}</h2>
+      <ul class="list-group">
+        <li class="list-group-item">Username: {{user.username}}</li>
+        <li class="list-group-item">Email: {{user.email}}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="column"></div>
+</div>
