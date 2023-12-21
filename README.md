@@ -1,8 +1,8 @@
-Todo App
+# Todo App
 
-Usage
-Install the dependencies
+## Usage
+### Install the dependencies
 $ npm install
 
-Run app
+## Run app
 $ npm start
