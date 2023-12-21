@@ -1,4 +1,5 @@
 # Todo App
+MEAN stack application with authentication
 
 ## Usage
 ### Install the dependencies
